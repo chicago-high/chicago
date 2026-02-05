@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Highlands Club | Private Golf & Country Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor" id="cursor">
+        <div class="cursor-dot"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="https://www.chicagohighlands.com/images/default/logo.png" alt="Chicago Highlands Club">
+            </a>
+            
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#golf" class="nav-link">Golf</a>
+                <a href="#amenities" class="nav-link">Amenities</a>
+                <a href="#membership" class="nav-link">Membership</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="https://www.chicagohighlands.com/member-home" target="_blank" class="btn-member">Member Login</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#golf" class="mobile-link">Golf</a>
+            <a href="#amenities" class="mobile-link">Amenities</a>
+            <a href="#membership" class="mobile-link">Membership</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="https://www.chicagohighlands.com/member-home" target="_blank" class="mobile-member">Member Login</a>
+        </div>
+    </div>
+
+    <!-- Hero Section with Video -->
+    <section class="hero">
+        <div class="hero-media">
+            <div class="hero-video-wrapper">
+                <iframe 
+                    src="https://player.vimeo.com/video/619160300?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1&quality=1080p"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    class="hero-video">
+                </iframe>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="tag-line"></span>
+                <span class="tag-text">Westchester, Illinois</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="word">Chicago</span>
+                <span class="word">Highlands</span>
+                <span class="word accent">Club</span>
+            </h1>
+            <p class="hero-subtitle">Where links-style golf meets Chicago skyline views</p>
+            <div class="hero-cta">
+                <a href="#membership" class="btn-primary">Explore Membership</a>
+                <a href="#golf" class="btn-outline">Course Tour</a>
+            </div>
+        </div>
+
+        <div class="hero-bottom">
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">270</span>
+                    <span class="stat-label">Acres</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">18</span>
+                    <span class="stat-label">Holes</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">80ft</span>
+                    <span class="stat-label">Elevation</span>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-intro">
+                <div class="section-tag">
+                    <span class="tag-number">01</span>
+                    <span class="tag-text">About the Club</span>
+                </div>
+                <h2 class="about-title">A One-of-a-Kind<br>Private Club</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">Chicago Highlands is a one-of-a-kind private club in the Chicagoland area featuring a links-style Arthur Hills designed golf course with sweeping views of the Chicago skyline.</p>
+                    <p>The first family-friendly country club to open in the western suburbs in more than 80 years. Our state-of-the-art facilities include a 400-yard grass practice area with three separate practice holes, family-friendly swimming pool with waterslide, clay tennis courts, paddle tennis, full gym, and even a private bowling alley.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </span>
+                        <div class="highlight-content">
+                            <h4>Year-Round Activities</h4>
+                            <p>Golf, swimming, tennis, bowling, ice skating & more</p>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </span>
+                        <div class="highlight-content">
+                            <h4>300 Families</h4>
+                            <p>Exclusive membership limited to maintain quality</p>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9,22 9,12 15,12 15,22"/>
+                            </svg>
+                        </span>
+                        <div class="highlight-content">
+                            <h4>No Hidden Fees</h4>
+                            <p>No F&B minimums, locker, range, instruction included</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Golf Section -->
+    <section class="golf" id="golf">
+        <div class="golf-visual">
+            <img src="https://www.chicagohighlands.com/images/slideshows/sub_banner_about.jpg" alt="Chicago Highlands Golf Course" class="golf-image" loading="lazy">
+            <div class="golf-overlay"></div>
+        </div>
+        
+        <div class="golf-content">
+            <div class="section-tag light">
+                <span class="tag-number">02</span>
+                <span class="tag-text">The Course</span>
+            </div>
+            
+            <h2 class="golf-title">Arthur Hills<br>Masterpiece</h2>
+            
+            <p class="golf-description">Built on 270 acres with elevation changes of over 80 feet, dramatic views of the Chicago skyline, and a style that will make you feel you are playing a modernized links course in Scotland.</p>
+            
+            <div class="golf-features">
+                <div class="feature">
+                    <span class="feature-number">7,490</span>
+                    <span class="feature-label">Total Yards</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-number">Par 72</span>
+                    <span class="feature-label">Championship</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-number">Top 50</span>
+                    <span class="feature-label">Practice Range</span>
+                </div>
+            </div>
+            
+            <div class="golf-cta">
+                <a href="https://www.chicagohighlands.com/hole-by-hole-tour" target="_blank" class="btn-primary light">Hole by Hole Tour</a>
+                <a href="https://www.chicagohighlands.com/future-members/golf-course-overview/practice-facility" target="_blank" class="btn-outline">Practice Facility</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Hole Feature -->
+    <section class="signature-hole">
+        <div class="signature-content">
+            <span class="signature-label">Signature Hole</span>
+            <h3 class="signature-title">The 9th Hole</h3>
+            <p class="signature-description">Named by Golf Digest as one of the 18 best holes built in the U.S. since 2000. A drivable par four perched at the property's highest point with panoramic views of downtown Chicago.</p>
+        </div>
+        <div class="signature-stats">
+            <div class="signature-stat">
+                <span class="stat-num">344</span>
+                <span class="stat-unit">yards</span>
+            </div>
+            <div class="signature-divider"></div>
+            <div class="signature-stat">
+                <span class="stat-num">Par 4</span>
+                <span class="stat-unit">Drivable</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities" id="amenities">
+        <div class="amenities-header">
+            <div class="section-tag">
+                <span class="tag-number">03</span>
+                <span class="tag-text">Club Amenities</span>
+            </div>
+            <h2 class="amenities-title">Beyond Golf</h2>
+            <p class="amenities-subtitle">Year-round activities for the whole family</p>
+        </div>
+
+        <div class="amenities-grid">
+            <!-- Featured: Clubhouse -->
+            <div class="amenity-card featured">
+                <div class="card-image">
+                    <img src="https://www.chicagohighlands.com/images/galleries/amenities/clubhouse.jpg" alt="Clubhouse" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Clubhouse</h3>
+                    <p>State-of-the-art clubhouse with casual and formal dining, fully stocked pro shop, and elegant bar overlooking the course.</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+
+            <!-- Swimming Complex -->
+            <div class="amenity-card">
+                <div class="card-image">
+                    <img src="https://www.chicagohighlands.com/images/galleries/amenities/pool.jpg" alt="Swimming Complex" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Swimming Complex</h3>
+                    <p>Family-friendly pool with diving boards and waterslide.</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+
+            <!-- Pool House -->
+            <div class="amenity-card">
+                <div class="card-image">
+                    <img src="https://www.chicagohighlands.com/images/galleries/amenities/pool-ice.jpg" alt="Pool House" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Pool & Ice House</h3>
+                    <p>Elegant poolhouse with lounge and refreshments.</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+
+            <!-- Tennis & Paddle -->
+            <div class="amenity-card">
+                <div class="card-image">
+                    <img src="https://www.chicagohighlands.com/images/galleries/amenities/tennis.jpg" alt="Paddle & Tennis" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Paddle & Tennis</h3>
+                    <p>State-of-the-art Har-Tru hydro courts with covered patio.</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+
+            <!-- Bowling -->
+            <div class="amenity-card">
+                <div class="card-image">
+                    <img src="https://www.chicagohighlands.com/images/galleries/amenities/bowling.jpg" alt="Bowling" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Private Bowling</h3>
+                    <p>One-of-a-kind private bowling alley for members.</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+
+            <!-- Full Gym -->
+            <div class="amenity-card">
+                <div class="card-image">
+                    <img src="https://www.chicagohighlands.com/images/galleries/amenities/gym.jpg" alt="Full Gym" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Full Gym</h3>
+                    <p>Complete fitness center and exercise studio.</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+
+            <!-- Indoor Golf -->
+            <div class="amenity-card">
+                <div class="card-image">
+                    <img src="https://www.chicagohighlands.com/images/galleries/amenities/indoor-golf.jpg" alt="Indoor Golf" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Indoor Golf</h3>
+                    <p>Year-round golf simulators and training facility.</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+
+            <!-- Ice Rink & Sledding -->
+            <div class="amenity-card">
+                <div class="card-image">
+                    <img src="https://www.chicagohighlands.com/images/galleries/amenities/ice-hockey.jpg" alt="Ice Rink & Sledding" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3>Ice Rink & Sledding</h3>
+                    <p>Regulation ice rink, cross country skiing, and sledding hills.</p>
+                    <span class="card-arrow">→</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="amenities-extra">
+            <div class="extra-item">
+                <span class="extra-icon">◈</span>
+                <span class="extra-text">Member Events</span>
+            </div>
+            <div class="extra-item">
+                <span class="extra-icon">◈</span>
+                <span class="extra-text">Private Dining</span>
+            </div>
+            <div class="extra-item">
+                <span class="extra-icon">◈</span>
+                <span class="extra-text">Caddie Program</span>
+            </div>
+            <div class="extra-item">
+                <span class="extra-icon">◈</span>
+                <span class="extra-text">Junior Programs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership" id="membership">
+        <div class="membership-container">
+            <div class="membership-visual">
+                <img src="https://www.chicagohighlands.com/images/buttons/banner_button_1.jpg" alt="Membership" loading="lazy">
+                <div class="visual-overlay"></div>
+                <div class="visual-badge">
+                    <span>Est.</span>
+                    <strong>2010</strong>
+                </div>
+            </div>
+            
+            <div class="membership-content">
+                <div class="section-tag">
+                    <span class="tag-number">04</span>
+                    <span class="tag-text">Membership</span>
+                </div>
+                
+                <h2 class="membership-title">Join Our<br>Community</h2>
+                
+                <p class="membership-description">A young, friendly, vibrant, and family-oriented membership that creates a welcoming environment for all members and their guests.</p>
+                
+                <div class="membership-benefits">
+                    <div class="benefit">
+                        <span class="benefit-check">✓</span>
+                        <span>Unlimited Golf & Range</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-check">✓</span>
+                        <span>All Amenities Included</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-check">✓</span>
+                        <span>No F&B Minimums</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-check">✓</span>
+                        <span>Golf Instruction Included</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-check">✓</span>
+                        <span>Locker & Bag Storage</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-check">✓</span>
+                        <span>Guest Privileges</span>
+                    </div>
+                </div>
+                
+                <div class="membership-cta">
+                    <a href="https://www.chicagohighlands.com/future-members/membership-overview" target="_blank" class="btn-primary">Learn More</a>
+                    <a href="#contact" class="btn-text">Contact Us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="section-tag">
+                    <span class="tag-number">05</span>
+                    <span class="tag-text">Contact</span>
+                </div>
+                
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-description">We'd love to hear from you. Reach out to learn more about membership opportunities or to schedule a visit.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </span>
+                        <div class="item-content">
+                            <h4>Address</h4>
+                            <p>2 Bluebird Trail<br>Westchester, IL 60154</p>
+                            <a href="https://maps.google.com/?q=2+Bluebird+Trail+Westchester+IL+60154" target="_blank" class="item-link">Get Directions →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </span>
+                        <div class="item-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:708-947-2190">708-947-2190</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="item-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </span>
+                        <div class="item-content">
+                            <h4>Inquiries</h4>
+                            <p>Tom Healy<br>Membership Director</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-links">
+                    <a href="https://www.chicagohighlands.com/guest-info" target="_blank">Guest Information</a>
+                    <a href="https://www.chicagohighlands.com/contact" target="_blank">Contact Form</a>
+                </div>
+            </div>
+            
+            <div class="contact-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.5!2d-87.89!3d41.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e49f8e76f7d0f%3A0x9e9e9e9e9e9e9e9e!2s2%20Bluebird%20Trail%2C%20Westchester%2C%20IL%2060154!5e0!3m2!1sen!2sus!4v1699999999999"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="https://www.chicagohighlands.com/images/default/logo.png" alt="Chicago Highlands Club" class="footer-logo">
+                    <p class="footer-tagline">A one-of-a-kind private club experience in Chicagoland</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h5>Club</h5>
+                        <a href="#about">About</a>
+                        <a href="#golf">Golf Course</a>
+                        <a href="#amenities">Amenities</a>
+                        <a href="#membership">Membership</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Golf</h5>
+                        <a href="https://www.chicagohighlands.com/hole-by-hole-tour" target="_blank">Course Tour</a>
+                        <a href="https://www.chicagohighlands.com/future-members/golf-course-overview/practice-facility" target="_blank">Practice Facility</a>
+                        <a href="https://www.chicagohighlands.com/future-members/golf-course-overview/architect" target="_blank">Arthur Hills</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Connect</h5>
+                        <a href="#contact">Contact</a>
+                        <a href="https://www.chicagohighlands.com/guest-info" target="_blank">Guest Info</a>
+                        <a href="https://www.chicagohighlands.com/member-home" target="_blank">Member Login</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Chicago Highlands Club. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="https://www.chicagohighlands.com/site-map" target="_blank">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
